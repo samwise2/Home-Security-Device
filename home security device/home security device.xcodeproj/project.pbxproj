@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6779C142238C798E00F9BD62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779C141238C798E00F9BD62 /* AppDelegate.swift */; };
+		6779C144238C798E00F9BD62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779C143238C798E00F9BD62 /* ViewController.swift */; };
+		6779C147238C798E00F9BD62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6779C145238C798E00F9BD62 /* Main.storyboard */; };
+		6779C149238C798F00F9BD62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6779C148238C798F00F9BD62 /* Assets.xcassets */; };
+		6779C14C238C798F00F9BD62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6779C14A238C798F00F9BD62 /* LaunchScreen.storyboard */; };
+		6779C157238C799000F9BD62 /* home_security_deviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779C156238C799000F9BD62 /* home_security_deviceTests.swift */; };
+		6779C162238C799000F9BD62 /* home_security_deviceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779C161238C799000F9BD62 /* home_security_deviceUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6779C153238C799000F9BD62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6779C136238C798E00F9BD62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6779C13D238C798E00F9BD62;
+			remoteInfo = "home security device";
+		};
+		6779C15E238C799000F9BD62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6779C136238C798E00F9BD62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6779C13D238C798E00F9BD62;
+			remoteInfo = "home security device";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6779C13E238C798E00F9BD62 /* home security device.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "home security device.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6779C141238C798E00F9BD62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6779C143238C798E00F9BD62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6779C146238C798E00F9BD62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6779C148238C798F00F9BD62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6779C14B238C798F00F9BD62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6779C14D238C798F00F9BD62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6779C152238C799000F9BD62 /* home security deviceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "home security deviceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6779C156238C799000F9BD62 /* home_security_deviceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_security_deviceTests.swift; sourceTree = "<group>"; };
+		6779C158238C799000F9BD62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6779C15D238C799000F9BD62 /* home security deviceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "home security deviceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6779C161238C799000F9BD62 /* home_security_deviceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_security_deviceUITests.swift; sourceTree = "<group>"; };
+		6779C163238C799000F9BD62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6779C13B238C798E00F9BD62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6779C14F238C799000F9BD62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6779C15A238C799000F9BD62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6779C135238C798E00F9BD62 = {
+			isa = PBXGroup;
+			children = (
+				6779C140238C798E00F9BD62 /* home security device */,
+				6779C155238C799000F9BD62 /* home security deviceTests */,
+				6779C160238C799000F9BD62 /* home security deviceUITests */,
+				6779C13F238C798E00F9BD62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6779C13F238C798E00F9BD62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6779C13E238C798E00F9BD62 /* home security device.app */,
+				6779C152238C799000F9BD62 /* home security deviceTests.xctest */,
+				6779C15D238C799000F9BD62 /* home security deviceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6779C140238C798E00F9BD62 /* home security device */ = {
+			isa = PBXGroup;
+			children = (
+				6779C141238C798E00F9BD62 /* AppDelegate.swift */,
+				6779C143238C798E00F9BD62 /* ViewController.swift */,
+				6779C145238C798E00F9BD62 /* Main.storyboard */,
+				6779C148238C798F00F9BD62 /* Assets.xcassets */,
+				6779C14A238C798F00F9BD62 /* LaunchScreen.storyboard */,
+				6779C14D238C798F00F9BD62 /* Info.plist */,
+			);
+			path = "home security device";
+			sourceTree = "<group>";
+		};
+		6779C155238C799000F9BD62 /* home security deviceTests */ = {
+			isa = PBXGroup;
+			children = (
+				6779C156238C799000F9BD62 /* home_security_deviceTests.swift */,
+				6779C158238C799000F9BD62 /* Info.plist */,
+			);
+			path = "home security deviceTests";
+			sourceTree = "<group>";
+		};
+		6779C160238C799000F9BD62 /* home security deviceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6779C161238C799000F9BD62 /* home_security_deviceUITests.swift */,
+				6779C163238C799000F9BD62 /* Info.plist */,
+			);
+			path = "home security deviceUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6779C13D238C798E00F9BD62 /* home security device */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6779C166238C799000F9BD62 /* Build configuration list for PBXNativeTarget "home security device" */;
+			buildPhases = (
+				6779C13A238C798E00F9BD62 /* Sources */,
+				6779C13B238C798E00F9BD62 /* Frameworks */,
+				6779C13C238C798E00F9BD62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "home security device";
+			productName = "home security device";
+			productReference = 6779C13E238C798E00F9BD62 /* home security device.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6779C151238C799000F9BD62 /* home security deviceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6779C169238C799000F9BD62 /* Build configuration list for PBXNativeTarget "home security deviceTests" */;
+			buildPhases = (
+				6779C14E238C799000F9BD62 /* Sources */,
+				6779C14F238C799000F9BD62 /* Frameworks */,
+				6779C150238C799000F9BD62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6779C154238C799000F9BD62 /* PBXTargetDependency */,
+			);
+			name = "home security deviceTests";
+			productName = "home security deviceTests";
+			productReference = 6779C152238C799000F9BD62 /* home security deviceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6779C15C238C799000F9BD62 /* home security deviceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6779C16C238C799000F9BD62 /* Build configuration list for PBXNativeTarget "home security deviceUITests" */;
+			buildPhases = (
+				6779C159238C799000F9BD62 /* Sources */,
+				6779C15A238C799000F9BD62 /* Frameworks */,
+				6779C15B238C799000F9BD62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6779C15F238C799000F9BD62 /* PBXTargetDependency */,
+			);
+			name = "home security deviceUITests";
+			productName = "home security deviceUITests";
+			productReference = 6779C15D238C799000F9BD62 /* home security deviceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6779C136238C798E00F9BD62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Sam Orend";
+				TargetAttributes = {
+					6779C13D238C798E00F9BD62 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					6779C151238C799000F9BD62 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 6779C13D238C798E00F9BD62;
+					};
+					6779C15C238C799000F9BD62 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 6779C13D238C798E00F9BD62;
+					};
+				};
+			};
+			buildConfigurationList = 6779C139238C798E00F9BD62 /* Build configuration list for PBXProject "home security device" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6779C135238C798E00F9BD62;
+			productRefGroup = 6779C13F238C798E00F9BD62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6779C13D238C798E00F9BD62 /* home security device */,
+				6779C151238C799000F9BD62 /* home security deviceTests */,
+				6779C15C238C799000F9BD62 /* home security deviceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6779C13C238C798E00F9BD62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6779C14C238C798F00F9BD62 /* LaunchScreen.storyboard in Resources */,
+				6779C149238C798F00F9BD62 /* Assets.xcassets in Resources */,
+				6779C147238C798E00F9BD62 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6779C150238C799000F9BD62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6779C15B238C799000F9BD62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6779C13A238C798E00F9BD62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6779C144238C798E00F9BD62 /* ViewController.swift in Sources */,
+				6779C142238C798E00F9BD62 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6779C14E238C799000F9BD62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6779C157238C799000F9BD62 /* home_security_deviceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6779C159238C799000F9BD62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6779C162238C799000F9BD62 /* home_security_deviceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6779C154238C799000F9BD62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6779C13D238C798E00F9BD62 /* home security device */;
+			targetProxy = 6779C153238C799000F9BD62 /* PBXContainerItemProxy */;
+		};
+		6779C15F238C799000F9BD62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6779C13D238C798E00F9BD62 /* home security device */;
+			targetProxy = 6779C15E238C799000F9BD62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6779C145238C798E00F9BD62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6779C146238C798E00F9BD62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6779C14A238C798F00F9BD62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6779C14B238C798F00F9BD62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6779C164238C799000F9BD62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6779C165238C799000F9BD62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6779C167238C799000F9BD62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9UP7T4HX6;
+				INFOPLIST_FILE = "home security device/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.version1.home-security-device";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6779C168238C799000F9BD62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9UP7T4HX6;
+				INFOPLIST_FILE = "home security device/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.version1.home-security-device";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6779C16A238C799000F9BD62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "home security deviceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.version1.home-security-deviceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/home security device.app/home security device";
+			};
+			name = Debug;
+		};
+		6779C16B238C799000F9BD62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "home security deviceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.version1.home-security-deviceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/home security device.app/home security device";
+			};
+			name = Release;
+		};
+		6779C16D238C799000F9BD62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "home security deviceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.version1.home-security-deviceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "home security device";
+			};
+			name = Debug;
+		};
+		6779C16E238C799000F9BD62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "home security deviceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.version1.home-security-deviceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "home security device";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6779C139238C798E00F9BD62 /* Build configuration list for PBXProject "home security device" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6779C164238C799000F9BD62 /* Debug */,
+				6779C165238C799000F9BD62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6779C166238C799000F9BD62 /* Build configuration list for PBXNativeTarget "home security device" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6779C167238C799000F9BD62 /* Debug */,
+				6779C168238C799000F9BD62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6779C169238C799000F9BD62 /* Build configuration list for PBXNativeTarget "home security deviceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6779C16A238C799000F9BD62 /* Debug */,
+				6779C16B238C799000F9BD62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6779C16C238C799000F9BD62 /* Build configuration list for PBXNativeTarget "home security deviceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6779C16D238C799000F9BD62 /* Debug */,
+				6779C16E238C799000F9BD62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6779C136238C798E00F9BD62 /* Project object */;
+}
