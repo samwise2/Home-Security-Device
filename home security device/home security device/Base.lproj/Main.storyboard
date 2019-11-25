@@ -37,6 +37,11 @@
                                 <rect key="frame" x="245" y="489" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pmf-4L-Szk">
+                                <rect key="frame" x="16" y="0.0" width="292" height="198"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,6 +51,7 @@
                         <outlet property="DoorSwitch" destination="cc6-Uf-JVT" id="IBJ-Xf-IXM"/>
                         <outlet property="MotionSwitch" destination="quz-hX-C0o" id="eR2-9F-Pbj"/>
                         <outlet property="background" destination="Sx9-A0-Sib" id="etG-ao-JWV"/>
+                        <outlet property="picker" destination="Pmf-4L-Szk" id="X8v-HP-G4E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

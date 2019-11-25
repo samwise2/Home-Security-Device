@@ -9,18 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    private let dataSource = ["apple", "bannana", "bob"]
+    
     var counter = 0
     @IBOutlet weak var DoorSwitch: UISwitch!
     @IBOutlet weak var MotionSwitch: UISwitch!
     @IBOutlet weak var BuzzerSwitch: UISwitch!
     @IBOutlet var background: UIImageView!
+    @IBOutlet weak var picker: UIPickerView!
     
     
     var button = dropDownBtn()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        picker.dataSource = self
+        picker.delegate = self
         
         //Configure the button
         button = dropDownBtn.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -59,6 +63,27 @@ class ViewController: UIViewController {
     }
     
 
+}
+
+extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return dataSource.count
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        //detailLabel.text = dataSource[row]
+        //picks given thing
+        if dataSource[row] == "apple"
+        {
+            BuzzerSwitch.isOn = true
+        }
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return dataSource[row]
+    }
+    
 }
 
 protocol dropDownProtocol {
