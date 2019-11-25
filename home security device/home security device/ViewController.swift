@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    var counter = 0
     @IBOutlet weak var DoorSwitch: UISwitch!
     @IBOutlet weak var MotionSwitch: UISwitch!
     @IBOutlet weak var BuzzerSwitch: UISwitch!
+    @IBOutlet var background: UIImageView!
+    
     
     var button = dropDownBtn()
     
@@ -42,6 +44,20 @@ class ViewController: UIViewController {
         button.dropView.dropDownOptions = ["At Home", "Sleeping", "Away"]
         // Do any additional setup after loading the view.
     }
+    
+    
+    @IBAction func doorLockToggled(_ sender: Any) {
+        //var newImage : UIImage = UIImage(named:"securedHomeScreen")!
+        if(DoorSwitch.isOn)
+        {
+            background.image = UIImage(named: "secured")
+        }
+        else if(!DoorSwitch.isOn)
+        {
+            background.image = UIImage(named: "homeScreen")
+        }
+    }
+    
 
 }
 

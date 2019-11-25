@@ -10,10 +10,10 @@
 		6779C142238C798E00F9BD62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779C141238C798E00F9BD62 /* AppDelegate.swift */; };
 		6779C144238C798E00F9BD62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779C143238C798E00F9BD62 /* ViewController.swift */; };
 		6779C147238C798E00F9BD62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6779C145238C798E00F9BD62 /* Main.storyboard */; };
-		6779C149238C798F00F9BD62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6779C148238C798F00F9BD62 /* Assets.xcassets */; };
 		6779C14C238C798F00F9BD62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6779C14A238C798F00F9BD62 /* LaunchScreen.storyboard */; };
 		6779C157238C799000F9BD62 /* home_security_deviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779C156238C799000F9BD62 /* home_security_deviceTests.swift */; };
 		6779C162238C799000F9BD62 /* home_security_deviceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779C161238C799000F9BD62 /* home_security_deviceUITests.swift */; };
+		6779C170238C939E00F9BD62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6779C16F238C939E00F9BD62 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		6779C141238C798E00F9BD62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6779C143238C798E00F9BD62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6779C146238C798E00F9BD62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6779C148238C798F00F9BD62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6779C14B238C798F00F9BD62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6779C14D238C798F00F9BD62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6779C152238C799000F9BD62 /* home security deviceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "home security deviceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		6779C15D238C799000F9BD62 /* home security deviceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "home security deviceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6779C161238C799000F9BD62 /* home_security_deviceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_security_deviceUITests.swift; sourceTree = "<group>"; };
 		6779C163238C799000F9BD62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6779C16F238C939E00F9BD62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 				6779C141238C798E00F9BD62 /* AppDelegate.swift */,
 				6779C143238C798E00F9BD62 /* ViewController.swift */,
 				6779C145238C798E00F9BD62 /* Main.storyboard */,
-				6779C148238C798F00F9BD62 /* Assets.xcassets */,
+				6779C16F238C939E00F9BD62 /* Assets.xcassets */,
 				6779C14A238C798F00F9BD62 /* LaunchScreen.storyboard */,
 				6779C14D238C798F00F9BD62 /* Info.plist */,
 			);
@@ -230,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6779C14C238C798F00F9BD62 /* LaunchScreen.storyboard in Resources */,
-				6779C149238C798F00F9BD62 /* Assets.xcassets in Resources */,
+				6779C170238C939E00F9BD62 /* Assets.xcassets in Resources */,
 				6779C147238C798E00F9BD62 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
