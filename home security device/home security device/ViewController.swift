@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    private let dataSource = ["apple", "bannana", "bob"]
+    private let dataSource = ["At Home", "Sleeping", "Away"]
     
     var counter = 0
     @IBOutlet weak var DoorSwitch: UISwitch!
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var picker: UIPickerView!
     
     
-    var button = dropDownBtn()
+    //var button = dropDownBtn()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,25 +27,25 @@ class ViewController: UIViewController {
         picker.delegate = self
         
         //Configure the button
-        button = dropDownBtn.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        button.setTitle("At Home", for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
+        //button = dropDownBtn.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        //button.setTitle("At Home", for: .normal)
+        //button.translatesAutoresizingMaskIntoConstraints = false
         
         //Add Button to the View Controller
-        self.view.addSubview(button)
+        //self.view.addSubview(button)
         //button Constraints
-        NSLayoutConstraint(item: button, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leadingMargin, multiplier: 1.0, constant: 180.0).isActive = true
-        NSLayoutConstraint(item: button, attribute: .bottom, relatedBy: .equal, toItem: view, attribute:.bottomMargin, multiplier: 1.0, constant:-310.0).isActive = true
+       // NSLayoutConstraint(item: button, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leadingMargin, multiplier: 1.0, constant: 180.0).isActive = true
+       // NSLayoutConstraint(item: button, attribute: .bottom, relatedBy: .equal, toItem: view, attribute:.bottomMargin, multiplier: 1.0, constant:-310.0).isActive = true
         //button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         //button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         //var xPos = 50.0
         //var yPos = 50.0
         //button.frame = CGRectMake(CGFloat(xPos),CGFloat(yPos), 50 .width)
-        button.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+       // button.widthAnchor.constraint(equalToConstant: 100).isActive = true
+       // button.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         //Set the drop down menu's options
-        button.dropView.dropDownOptions = ["At Home", "Sleeping", "Away"]
+        //button.dropView.dropDownOptions = ["At Home", "Sleeping", "Away"]
         // Do any additional setup after loading the view.
     }
     
@@ -66,7 +66,8 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView)
+        -> Int {
         return 1
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -75,9 +76,25 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         //detailLabel.text = dataSource[row]
         //picks given thing
-        if dataSource[row] == "apple"
+        if dataSource[row] == "Away"
         {
-            BuzzerSwitch.isOn = true
+            background.image = UIImage(named: "secured")
+            BuzzerSwitch.isOn=true;
+            DoorSwitch.isOn = true;
+            MotionSwitch.isOn = true;
+        }
+        if dataSource[row] == "At Home"
+        {
+            background.image = UIImage(named: "secured")
+            BuzzerSwitch.isOn = false
+            DoorSwitch.isOn = true
+            MotionSwitch.isOn = false;
+        }
+        if dataSource[row] == "Sleeping" {
+            background.image = UIImage(named: "secured")
+            DoorSwitch.isOn = true
+            MotionSwitch.isOn = true
+            BuzzerSwitch.isOn = false
         }
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -86,7 +103,7 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
 }
 
-protocol dropDownProtocol {
+/*protocol dropDownProtocol {
     func dropDownPressed(string : String)
 }
 
@@ -227,6 +244,6 @@ class dropDownView: UIView, UITableViewDelegate, UITableViewDataSource  {
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
     
-}
+}*/
 
 
