@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     private let dataSource = ["At Home", "Sleeping", "Away"]
     
+    
+    
+    
     var counter = 0
     @IBOutlet weak var DoorSwitch: UISwitch!
     @IBOutlet weak var MotionSwitch: UISwitch!
@@ -23,6 +26,64 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ParticleCloud.sharedInstance().login(withUser:
+        "erfanghafoori@gmail.com", password: "Particle1"){
+            (error:Error?)-> Void in
+            if let _ = error{
+                print("Wrong credentials or no internet connectivity, please try again")
+            }
+            else {
+                print("Logged in")
+            }
+        }
+        
+        var myPhoton : ParticleDevice?
+        ParticleCloud.sharedInstance().getDevices { (devices: [ParticleDevice]?, error:Error?) -> Void in
+            if let _ = error {
+                print("Check your internet connectivity")
+            }
+            else {
+                if let d = devices {
+                    for device in d {
+                        if device.name == "myNewPhotonName" {
+                            myPhoton = device
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+        
+        myPhoton!.getVariable("motion", completion: {
+            (result:Any?, error:Error?) -> Void in
+            if let _ = error {
+                print("Failed reading motion variable")
+            }
+            else {
+                if let motion = result as? NSNumber {
+                    print("Motion is on: \(motion.stringValue) motion")
+                    
+                    
+                    if (self.BuzzerSwitch.isOn == true){
+                        if motion == 1{
+                            let funcArgs = ["D1",1] as [Any]
+                            var task = myPhoton!.callFunction("digitalWrite", withArguments: funcArgs) { (resultCode : NSNumber?, error: Error?) -> Void in
+                                if (error == nil) {
+                                    print("Buzzer on D1 successfully turned on")
+                                }
+                            }
+                            var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
+                        }
+                    }
+                }
+            }
+        })
+        
+        
+        
+        
         picker.dataSource = self
         picker.delegate = self
         

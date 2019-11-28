@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16F8E392870E8E6D09832D2A /* libPods-home security deviceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D5127F0539C61B2A4013D2 /* libPods-home security deviceTests.a */; };
 		6779C142238C798E00F9BD62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779C141238C798E00F9BD62 /* AppDelegate.swift */; };
 		6779C144238C798E00F9BD62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779C143238C798E00F9BD62 /* ViewController.swift */; };
 		6779C147238C798E00F9BD62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6779C145238C798E00F9BD62 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		6779C157238C799000F9BD62 /* home_security_deviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779C156238C799000F9BD62 /* home_security_deviceTests.swift */; };
 		6779C162238C799000F9BD62 /* home_security_deviceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779C161238C799000F9BD62 /* home_security_deviceUITests.swift */; };
 		6779C170238C939E00F9BD62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6779C16F238C939E00F9BD62 /* Assets.xcassets */; };
+		7EB78D752E85926666C8069C /* Pods_home_security_device.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A37F2148D41D1AC8A060A0 /* Pods_home_security_device.framework */; };
+		A4FD0F02B6E2D3A03B63A0FD /* libPods-home security deviceUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD69C076CC0BE0E0BBB8A61 /* libPods-home security deviceUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D6A980707E1CDD0D297BCA4 /* Pods-home security deviceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home security deviceTests.release.xcconfig"; path = "Target Support Files/Pods-home security deviceTests/Pods-home security deviceTests.release.xcconfig"; sourceTree = "<group>"; };
+		31345B681F98E6F006C26D4E /* Pods-home security device.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home security device.release.xcconfig"; path = "Target Support Files/Pods-home security device/Pods-home security device.release.xcconfig"; sourceTree = "<group>"; };
+		53580E9638A285A8F9CD11E6 /* Pods-home security deviceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home security deviceTests.debug.xcconfig"; path = "Target Support Files/Pods-home security deviceTests/Pods-home security deviceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6779C13E238C798E00F9BD62 /* home security device.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "home security device.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6779C141238C798E00F9BD62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6779C143238C798E00F9BD62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,13 @@
 		6779C161238C799000F9BD62 /* home_security_deviceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_security_deviceUITests.swift; sourceTree = "<group>"; };
 		6779C163238C799000F9BD62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6779C16F238C939E00F9BD62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6779C174238F6A6F00F9BD62 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		70D5127F0539C61B2A4013D2 /* libPods-home security deviceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-home security deviceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD69C076CC0BE0E0BBB8A61 /* libPods-home security deviceUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-home security deviceUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC954036A110312FA572ABCE /* Pods-home security deviceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home security deviceUITests.debug.xcconfig"; path = "Target Support Files/Pods-home security deviceUITests/Pods-home security deviceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8382294A2AC9B242B7A51A5 /* Pods-home security deviceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home security deviceUITests.release.xcconfig"; path = "Target Support Files/Pods-home security deviceUITests/Pods-home security deviceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E0A37F2148D41D1AC8A060A0 /* Pods_home_security_device.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_home_security_device.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA24EA4C85B88F53F2D1AE53 /* Pods-home security device.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home security device.debug.xcconfig"; path = "Target Support Files/Pods-home security device/Pods-home security device.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB78D752E85926666C8069C /* Pods_home_security_device.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F8E392870E8E6D09832D2A /* libPods-home security deviceTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4FD0F02B6E2D3A03B63A0FD /* libPods-home security deviceUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,8 @@
 				6779C155238C799000F9BD62 /* home security deviceTests */,
 				6779C160238C799000F9BD62 /* home security deviceUITests */,
 				6779C13F238C798E00F9BD62 /* Products */,
+				8C8ECAD15DF6B252C721CFA7 /* Pods */,
+				767ED750BA842EE536536088 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +115,7 @@
 		6779C140238C798E00F9BD62 /* home security device */ = {
 			isa = PBXGroup;
 			children = (
+				6779C174238F6A6F00F9BD62 /* Bridging-Header.h */,
 				6779C141238C798E00F9BD62 /* AppDelegate.swift */,
 				6779C143238C798E00F9BD62 /* ViewController.swift */,
 				6779C145238C798E00F9BD62 /* Main.storyboard */,
@@ -125,6 +144,29 @@
 			path = "home security deviceUITests";
 			sourceTree = "<group>";
 		};
+		767ED750BA842EE536536088 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0A37F2148D41D1AC8A060A0 /* Pods_home_security_device.framework */,
+				70D5127F0539C61B2A4013D2 /* libPods-home security deviceTests.a */,
+				7AD69C076CC0BE0E0BBB8A61 /* libPods-home security deviceUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C8ECAD15DF6B252C721CFA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA24EA4C85B88F53F2D1AE53 /* Pods-home security device.debug.xcconfig */,
+				31345B681F98E6F006C26D4E /* Pods-home security device.release.xcconfig */,
+				53580E9638A285A8F9CD11E6 /* Pods-home security deviceTests.debug.xcconfig */,
+				1D6A980707E1CDD0D297BCA4 /* Pods-home security deviceTests.release.xcconfig */,
+				CC954036A110312FA572ABCE /* Pods-home security deviceUITests.debug.xcconfig */,
+				D8382294A2AC9B242B7A51A5 /* Pods-home security deviceUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6779C166238C799000F9BD62 /* Build configuration list for PBXNativeTarget "home security device" */;
 			buildPhases = (
+				720E634274D12039FF7C3BD7 /* [CP] Check Pods Manifest.lock */,
 				6779C13A238C798E00F9BD62 /* Sources */,
 				6779C13B238C798E00F9BD62 /* Frameworks */,
 				6779C13C238C798E00F9BD62 /* Resources */,
+				BD24860465057FE2FADBDAA3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6779C169238C799000F9BD62 /* Build configuration list for PBXNativeTarget "home security deviceTests" */;
 			buildPhases = (
+				DAB77DB4377411C2E7A5ED2B /* [CP] Check Pods Manifest.lock */,
 				6779C14E238C799000F9BD62 /* Sources */,
 				6779C14F238C799000F9BD62 /* Frameworks */,
 				6779C150238C799000F9BD62 /* Resources */,
@@ -167,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6779C16C238C799000F9BD62 /* Build configuration list for PBXNativeTarget "home security deviceUITests" */;
 			buildPhases = (
+				CA107326FB2458468F3FBEBC /* [CP] Check Pods Manifest.lock */,
 				6779C159238C799000F9BD62 /* Sources */,
 				6779C15A238C799000F9BD62 /* Frameworks */,
 				6779C15B238C799000F9BD62 /* Resources */,
@@ -250,6 +296,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		720E634274D12039FF7C3BD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-home security device-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD24860465057FE2FADBDAA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-home security device/Pods-home security device-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-home security device/Pods-home security device-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-home security device/Pods-home security device-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA107326FB2458468F3FBEBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-home security deviceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAB77DB4377411C2E7A5ED2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-home security deviceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6779C13A238C798E00F9BD62 /* Sources */ = {
@@ -369,7 +501,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "home security device/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
@@ -423,13 +557,16 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "home security device/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		6779C167238C799000F9BD62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA24EA4C85B88F53F2D1AE53 /* Pods-home security device.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +585,7 @@
 		};
 		6779C168238C799000F9BD62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31345B681F98E6F006C26D4E /* Pods-home security device.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +604,7 @@
 		};
 		6779C16A238C799000F9BD62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53580E9638A285A8F9CD11E6 /* Pods-home security deviceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +625,7 @@
 		};
 		6779C16B238C799000F9BD62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D6A980707E1CDD0D297BCA4 /* Pods-home security deviceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +646,7 @@
 		};
 		6779C16D238C799000F9BD62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC954036A110312FA572ABCE /* Pods-home security deviceUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +666,7 @@
 		};
 		6779C16E238C799000F9BD62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8382294A2AC9B242B7A51A5 /* Pods-home security deviceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
