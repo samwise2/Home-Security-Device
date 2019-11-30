@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet var background: UIImageView!
     @IBOutlet weak var picker: UIPickerView!
     
-    
+    var myPhoton : ParticleDevice?
     //var button = dropDownBtn()
     
     override func viewDidLoad() {
@@ -38,7 +38,6 @@ class ViewController: UIViewController {
             }
         }
         
-        var myPhoton : ParticleDevice?
         ParticleCloud.sharedInstance().getDevices { (devices: [ParticleDevice]?, error:Error?) -> Void in
             if let _ = error {
                 print("Check your internet connectivity")
@@ -46,17 +45,93 @@ class ViewController: UIViewController {
             else {
                 if let d = devices {
                     for device in d {
-                        if device.name == "myNewPhotonName" {
-                            myPhoton = device
+                        if device.name == "Ishan" {
+                            self.myPhoton = device
+                            //print("done")
                         }
                     }
                 }
             }
         }
         
+        //print(myPhoton)
+       
+        /*
+        var myPhoton : ParticleDevice? = nil
+        ParticleCloud.sharedInstance().getDevice("290059000251353530373132", completion: { (device:ParticleDevice?, error:Error?) -> Void in
+            if let d = device {
+                myPhoton = d
+            }
+        })
+ */
+        
+        /*
+        if(myPhoton == nil)
+        {
+            print("no");
+        }
+ */
+        //string x;
+     //   let x = myPhoton?.getVariable("hello")
+     //   print(x!)
+
+        
+        /*
+        let myDeviceVariables : Dictionary? = myPhoton?.variables
+        print("MyDevice first Variable is called \(String(describing: myDeviceVariables?.keys.first)) and is from type \(String(describing: myDeviceVariables?.values.first))")
+ */
+  
+            //print("good")
+        
+        /*var handler : Any?
+        handler =
+            ParticleCloud.sharedInstance().subscribeToAllEvents(withPrefix: "motion", handler: {(event :ParticleEvent?, error: Error?) in
+                if let _ = error {
+                    print("could not sub")
+                }
+                else {
+                    DispatchQueue.main.async(execute: {
+                        print(event?.data)
+                       // print("got event with data \(event?.data)")
+                    })
+                }
+        })*/
+        
+        /*var eventListenerID : Any?
+        eventListenerID =
+            ParticleCloud.sharedInstance().subscribeToMyDevicesEvents(withPrefix: "1", handler: handler as? ParticleEventHandler)*/
+        /*if(event?.data == 1)
+        {
+            print(event?.data)
+        }*/
+        //print(eventListenerID)
         
         
-        myPhoton!.getVariable("motion", completion: {
+        //var item = eventListenerID
+        
+       /* if(item != nil) {
+            print(item)
+        }*/
+        
+        if (self.BuzzerSwitch.isOn == true){
+            
+            let funcArgs = ["D6", 1] as [Any]
+            var task = myPhoton!.callFunction("digitalWrite", withArguments: funcArgs) { (resultCode : NSNumber?, error: Error?) -> Void in
+                if (error == nil) {
+                    print("Buzzer")
+                }
+            }
+            var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
+            
+        }
+
+        
+        
+        
+        
+        
+        /*
+            myPhoton?.getVariable("motion", completion: {
             (result:Any?, error:Error?) -> Void in
             if let _ = error {
                 print("Failed reading motion variable")
@@ -64,23 +139,65 @@ class ViewController: UIViewController {
             else {
                 if let motion = result as? NSNumber {
                     print("Motion is on: \(motion.stringValue) motion")
-                    
-                    
-                    if (self.BuzzerSwitch.isOn == true){
-                        if motion == 1{
-                            let funcArgs = ["D1",1] as [Any]
-                            var task = myPhoton!.callFunction("digitalWrite", withArguments: funcArgs) { (resultCode : NSNumber?, error: Error?) -> Void in
-                                if (error == nil) {
-                                    print("Buzzer on D1 successfully turned on")
-                                }
-                            }
-                            var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
-                        }
-                    }
+                    print("rgbrg")
                 }
             }
         })
+   */
+ 
         
+      
+        /*if (self.BuzzerSwitch.isOn == true){
+      
+                let funcArgs = ["D6", 1] as [Any]
+                var task = myPhoton!.callFunction("digitalWrite", withArguments: funcArgs) { (resultCode : NSNumber?, error: Error?) -> Void in
+                    if (error == nil) {
+                        print("Buzzer")
+                    }
+                }
+                var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
+ 
+        }
+        
+        if (self.BuzzerSwitch.isOn == true){
+            
+            let funcArgs = ["D1", 1] as [Any]
+            var task = myPhoton!.callFunction("digitalWrite", withArguments: funcArgs) { (resultCode : NSNumber?, error: Error?) -> Void in
+                if (error == nil) {
+                    print("Buzzer")
+                }
+            }
+            var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
+            
+        }
+/*
+        if (self.BuzzerSwitch.isOn == false){
+            
+            let funcArgs1 = ["D1", 0] as [Any]
+            var task1 = myPhoton!.callFunction("digitalWrite1", withArguments: funcArgs1) { (resultCode1 : NSNumber?, error1: Error?) -> Void in
+                if (error1 == nil) {
+                    print("Buzzer")
+                }
+            }
+            var bytesToReceive1 : Int64 = task1.countOfBytesExpectedToReceive
+            
+        }*/
+*/
+       
+        /*
+        if (self.DoorSwitch.isOn == false){
+           
+            let funcArgs = ["D6", 0] as [Any]
+            var task = myPhoton!.callFunction("digitalWrite", withArguments: funcArgs) { (resultCode : NSNumber?, error: Error?) -> Void in
+                if (error == nil) {
+                    print("Off")
+                }
+            }
+            var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
+       
+        }
+ */
+ 
         
         
         
@@ -116,6 +233,10 @@ class ViewController: UIViewController {
         if(DoorSwitch.isOn)
         {
             background.image = UIImage(named: "secured")
+            print(myPhoton)
+            print("seperator")
+            //let myDeviceVariables : Dictionary? = myPhoton?.variables as? Dictionary<String,String>
+           // print(myDeviceVariables!.keys.first)
         }
         else if(!DoorSwitch.isOn)
         {
