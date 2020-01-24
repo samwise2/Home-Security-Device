@@ -1,4 +1,4 @@
-Watch our video below!
+Watch our funny commercial below!
 
 https://www.youtube.com/watch?v=lj1PTFa7HVI&t=10s
 
